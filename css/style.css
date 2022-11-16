@@ -282,15 +282,23 @@ body{
     padding-right: none;
 }
 .image-computer{
-    position: relative;
-    right: none;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    margin-left: 27%;
 }
     /* footer  */
 /* footer main */
 .footer-main{
     justify-items: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+
     display: grid;
     grid-template-areas: none;
     grid-template-rows:[row1] 50px [row2] 5fr [row7] 80px [stop];
@@ -304,6 +312,11 @@ body{
 .others{
     grid-row: row2 / row7;
     grid-column: col1 / col2;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     justify-items: center;
     display: grid;
@@ -343,6 +356,25 @@ body{
 }
 
 
-/* footer child */
+#header{
+    padding-left: 50px;
+    padding-right: 50px;
 
+}
+.mac-btn{
+ margin-left: 0px;
+ margin-right: 0px;
+}
+#text-1{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#text-2{
+padding-left: 50px;
+ padding-right: 50px;
+}
+#text-3{
+padding-left: 50px;
+padding-right: 50px;
+}
 }
