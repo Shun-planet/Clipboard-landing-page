@@ -218,6 +218,13 @@ body{
     grid-row: row1 / row2;
     grid-column: col2 / col3;
 
+    display: grid;
+    grid-template-areas: none;
+    grid-template-rows:[row1] 50% [row1a] 50% [row2];
+    grid-template-columns:[col2] 1fr [col2a] 1fr [col2b] 1fr [col3];
+    row-gap: 20px;
+    column-gap: 30px;
+
     justify-items: start;
     margin-top: 35px;
 }
@@ -238,14 +245,6 @@ body{
 }
 
 /* footer child */
-.others{
-    display: grid;
-    grid-template-areas: none;
-    grid-template-rows:[row1] 50% [row1a] 50% [row2];
-    grid-template-columns:[col2] 1fr [col2a] 1fr [col2b] 1fr [col3];
-    row-gap: 20px;
-    column-gap: 30px;
-}
 .faq{
     grid-row: row1 / row1a;
     grid-column: col2 / col2a;
@@ -273,7 +272,15 @@ body{
     color: var(--Strong-Cyan);
 }
 
-
+.my-signature{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+    color: var(--Light-Blue);
+}
+span{
+    font-weight: 400;
+}
 @media (max-width:1040px) {
 
 /* desktop image */
